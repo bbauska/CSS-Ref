@@ -1,2 +1,2 @@
-# CSS3-Ref
-CSS3 Reference Guide.
+# CSS-Ref
+CSS Reference Guide.
