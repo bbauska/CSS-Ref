@@ -1,4 +1,4 @@
-/* js/scripts.js of CSS3-Ref making CSS3-ref.bauska.org */
+/* js/scripts.js of CSS-Reference helping make CSS3-Reference.bauska.org */
 window.addEventListener('DOMContentLoaded', () => {
 
 	const observer = new IntersectionObserver(entries => {
