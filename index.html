@@ -31,27 +31,27 @@
 <body>
   <main>
     <div>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h1>CSS Reference</h1>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+      <h1>CSS Reference</h1>
+      <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       <p><em>Want an explanation of how this works?<br />&rarr; 
 	    <a href="https://cellardoor.bauska.org/" title="Cellardoor by bbauska" 
 		  target="_top">https://cellardoor.bauska.org/</a></em>
 	  </p>
       <section id="ch1-basic-concepts">
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <h2>Chapter 1: Basic Concepts</h2>
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 id="ch1">Chapter 1: Basic Concepts</h2>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
       </section>
       <section id="ch1-1-adding-style">
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-        <h2>1.1 Adding Style to HTML</h2>
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 id="ch1-1">1.1 Adding Style to HTML</h2>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <p>Styles can be applied to documents in three distinct ways, as discussed in the following 
 		sections.</p>
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <h4>Inline Styles</h4>
-        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <p>In HTML, style information can be specified for an individual element via the style 
 		attribute. The value of a style attribute is a <i>declaration block</i> (see the section 
 		"Rule Structure" on page 5) without the curly braces:</p>
@@ -204,9 +204,9 @@ This text is alarmingly presented!&lt;/p&gt;
 		  Easter egg for Firefox and Opera users.</p>
       </section>
       <section id="ch1-2-rul-structure">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.2 Rule Structure</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-2">1.2 Rule Structure</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <p>A stylesheet consists of one or more <i>rules</i> that describe how page 
 		  elements should be presented. Every rule has two fundamental parts: the 
 		  <i>selector</i> and the <i>declaration block</i>. Figure 1-1 illustrates the 
@@ -238,9 +238,9 @@ a property are defined by the property description. Chapter 4 provides details o
 acceptable values for CSS properties.</p>
       </section>
       <section id="ch1-3-at-rules">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-3">1.3 At-rules</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-3">1.3 At-rules</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A CSS <i>at-rule</i> is a statement or block of rules that begins with a specific 
 identifier preceded by an @ sign. These are:</p>
 <ul>
@@ -291,9 +291,9 @@ development. These include &#64;document, &#64;font-feature-values, &#64;page, a
 &#64;viewport.</p>
       </section>
       <section id="ch1-4-comments">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.4 Comments</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-4">1.4 Comments</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Including comments in CSS is simple. You open with /&ast; and end with &ast;/, like this:</p>
 <pre>/&ast; This is a comment! &ast;/</pre>
 <p>Comments can be multiple lines long:</p>
@@ -315,9 +315,9 @@ stylesheets so as to hide the styles from browsers so old that they don't unders
 comment will be seen and interpreted by the CSS parser.</p>
       </section>
       <section id="ch1-5-style-precedence">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.5 Style Precedence</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-5">1.5 Style Precedence</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A single HTML document can import and link to multiple external stylesheets, contain 
 one or more embedded stylesheets, and make use of inline styles. In the process, it is 
 quite possible that some rules will conflict with one another. Cascading Style Sheets 
@@ -396,9 +396,9 @@ within a browser) are given the same weight as the user agent's default styles (
 step 2 above).</p>
       </section>
       <section id="ch1-6-element-class">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-6">1.6 Element Classification</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-6">1.6 Element Classification</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Broadly speaking, CSS groups elements into two types: <i>nonreplaced</i> and <i>replaced</i>. Although 
 the types may seem rather abstract, there actually are some profound differences in how the two types of 
 elements are presented. These differences are explored in detail in Chapter 7 of 
@@ -429,9 +429,9 @@ its type. Replaced elements also generate boxes in their display.</p>
 
       </section>
       <section id="ch1-7-element-display-roles">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-7">1.7 Element Display Roles</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-7">1.7 Element Display Roles</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In addition to being replaced or not, there are two basic types of element display roles in CSS: 
 <i>block-level</i> and <i>inline-level</i>. All CSS display values fall into one of these two 
 categories. It can be important to know which general role a box falls into, since some properties 
@@ -470,9 +470,9 @@ values (e.g., ruby-text) also generate inline boxes, but this seems the most lik
 outcome.</p>
       </section>
       <section id="ch1-8-basic-visual-layout">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.8 Basic Visual Layout</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-8">1.8 Basic Visual Layout</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>CSS defines algorithms for laying out any element in a document. These algorithms form 
 the underpinnings of visual presentation in CSS. There are two primary kinds of layout, 
 each with very different behaviors: <i>block-level</i> and <i>inline-level</i> layout.</p>
@@ -614,9 +614,9 @@ determined by taking the following factors into account:</p>
 <p style="text-align:center;"><i>Figure 1-3. Inline layout details</i></p>
       </section>
       <section id="ch1-9-floating">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.9 Floating</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-9">1.9 Floating</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Floating allows an element to be placed to the left or right of its containing block 
 (which is the nearest block-level ancestor element), with following content flowing 
 around the element. Any floated element automatically generates a block box, regardless 
@@ -648,9 +648,9 @@ according to the following rules:</p>
 </ul>
       </section>
       <section id="ch1-10-positioning">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.10 Positioning</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-10">1.10 Positioning</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>When elements are positioned, a number of special rules come into play. These rules 
 govern not only the containing block of the element, but also how it is laid out within 
 that element.</p>
@@ -737,9 +737,9 @@ that element.</p>
 </ol>
       </section>
       <section id="ch1-11-flexible-box-layout">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.11 Flexible Box Layout</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-11">1.11 Flexible Box Layout</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Flexible box layout (also known as <i>flexbox</i> or <i>flex layout</i>) is ideal for 
 almost any one-dimensional layout; that is, situations where a number of elements need 
 to be placed and distributed along a line. There are two kinds of flex elements: the 
@@ -791,9 +791,9 @@ of the algorithm:</p>
         Module Level 1 for full details if you want to know more.</p>
       </section>
       <section id="ch1-12-grid-layout">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2>1.12 Grid Layout</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-12">1.12 Grid Layout</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Grid layout is ideal for almost any two-dimensional layout. There are two kinds of 
 grid elements: the <i>grid container</i> and the <i>grid items</i> that are placed within 
 the container. All the direct children of the grid container element are grid items.</p>
@@ -944,9 +944,9 @@ CSS Grid Layout Module Level 1 documentation</a>.</p>
 
       </section>
       <section id="ch1-13-table-layout">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch1-13">1.13 Table Layout</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch1-13">1.13 Table Layout</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The layout of tables can get quite complicated, especially because CSS
 defines two different ways to calculate table and cell widths, as well
 as two ways to handle the borders of tables and elements internal to the
@@ -1144,71 +1144,71 @@ Figure 1-7. There are strict rules governing which borders will win and which wi
 </ol>
       </section>
       <section id="ch2-values">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2">Chapter 2: Values</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>There are a variety of value types in CSS, most of which use units. Combining basic 
-value types (such as numbers) with units (such as pixels) makes it possible to do any 
-number of interesting things with CSS.</p>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 id="ch2">Chapter 2: Values</h2>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <p>There are a variety of value types in CSS, most of which use units. Combining basic 
+        value types (such as numbers) with units (such as pixels) makes it possible to do any 
+        number of interesting things with CSS.</p>
+
         <section id="ch2-1-keywords">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2-1">2.1 Keywords</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch2-1">2.1 Keywords</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Keywords are defined on a per-property basis and have a meaning specific only to a 
 given property. For example, normal has totally unique meanings for the properties font-
 variant and letter-spacing. Keywords, like property names, are not case-sensitive.</p>
 <p>CSS defines three "global" keywords that are accepted by every property in the 
 specification:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>inherit</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Forces the value for the property to be inherited from the element's parent element, 
-even if the property in question is not inherited (e.g., background-image). Another way 
-to think of this is that the value is copied from the parent element.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>initial</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Forces the value of the property to be the initial value defined by the relevant CSS 
-module. For example, fontstyle: initial sets the value of font-style to normal regardless 
-of the font-style value that would have been inherited from the parent element. In cases 
-where the initial value is defined as determined by the user agent, such as for font-size, 
-the value is set to the "default" defined by the user agent's preferences.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4>inherit</h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Forces the value for the property to be inherited from the element's parent element, 
+          even if the property in question is not inherited (e.g., background-image). Another way 
+          to think of this is that the value is copied from the parent element.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4>initial</h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Forces the value of the property to be the initial value defined by the relevant CSS 
+          module. For example, fontstyle: initial sets the value of font-style to normal regardless 
+          of the font-style value that would have been inherited from the parent element. In cases 
+          where the initial value is defined as determined by the user agent, such as for font-size, 
+          the value is set to the "default" defined by the user agent's preferences.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4>unset</h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
+          for good measure. If a property is inherited (e.g., color), then unset has the same 
+          effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
+          unset has the same effect as initial.</p>
 
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4>unset</h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Combines the effects of both inherit and initial, with a rudimentary logic built in 
-for good measure. If a property is inherited (e.g., color), then unset has the same 
-effect as inherit. If the property is <i>not</i> inherited (e.g., backgroundimage), then 
-unset has the same effect as initial.</p>
-
-<p>If you have a situation where you want to set all of the properties on an element to 
-their default values, thus breaking any chains of inheritance, see the all property in 
-Chapter 4.</p>
+          <p>If you have a situation where you want to set all of the properties on an element to 
+          their default values, thus breaking any chains of inheritance, see the all property in 
+          Chapter 4.</p>
 
         </section>
         <section id="ch2-2-color">
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h2 id="ch2-2">2.2 Color Values</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>Color values can be expressed in a variety of ways:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">#RRGGBB</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
-the first pair of digits corresponds to the red level, the second pair to the green, and 
-the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
-(decimal 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is written #FF0000, 
-and so on.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch2-2">2.2 Color Values</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Color values can be expressed in a variety of ways:</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">#RRGGBB</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>This is a hex-pair notation familiar to authors using traditional HTML. In this format, 
+          the first pair of digits corresponds to the red level, the second pair to the green, and 
+          the third pair to the blue. Each pair is in hexadecimal notation in the range 00--FF 
+          (decimal 0--255). Thus, a "pure" blue is written #0000FF, a "pure" red is written #FF0000, 
+          and so on.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i><span class="newFont">#RGB</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is a shorter form of the six-digit notation described previously. In this format, 
 each digit is replicated to arrive at an equivalent six-digit value; thus, #F8C becomes 
 #FF88CC.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h4><i><span class="newFont">#RRGGBBAA</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>An extension of the #RRGGBB notation which adds an alpha channel. As with the R, G, 
 and B values, the A (alpha) value is in hexadecimal notation in the range 00-- FF. These 
 are mapped from hexadecimal to decimal in the range 0--1; thus, #00FF0099 is equivalent 
@@ -1216,28 +1216,28 @@ to the color #00FF00 (light green) with an opacity of 0.6. The opacity here is d
 converting hexadecimal 99 to decimal 153, and then dividing 153 by 255 to get 0.6. Put 
 another way, #00FF0099 is exactly equivalent to rgba(0,255,0,0.6). Note: support for this 
 notation first emerged in early 2016.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">#RGBA</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">#RGBA</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This is a shorter form of the eight-digit #RRGGBBAA notation described previously. In 
 this format, each digit is replicated to arrive at an equivalent eight-digit value; thus, 
 &pound;F8C6 becomes #FF88CC66. Note: support for this notation first emerged in early 2016.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">rgb(rrr,ggg,bbb)</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This format allows the author to use RGB values in the range 0--255; only integers 
 are permitted. Not coincidentally, this range is the decimal equivalent of 00--FF in 
 hexadecimal. In this format, "pure" green is rgb(0,255,0), and white is represented as 
 rgb(255,255,255).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>This format allows the author to use RGB values in the range 0% to 100%, with decimal 
-values allowed (e.g., 75.5%). The value for black is thus rgb(0%,0%,0%), whereas "pure" 
-blue is rgb(0%,0%,100%).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">rgb(rrr.rr%,ggg.gg%,bbb.bb%)</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>This format allows the author to use RGB values in the range 0% to 100%, with decimal 
+          values allowed (e.g., 75.5%). The value for black is thus rgb(0%,0%,0%), whereas "pure" 
+          blue is rgb(0%,0%,100%).</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">hsl(hhh.hh,sss.ss%,lll.ll%)</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>This format permits authors to specify a color by its hue angle, saturation, and 
 lightness (HSL). The hue angle is always a unitless number or a <i>&lt;degree&gt;</i> 
 value in the range 0 to 360, and the saturation and brightness values are always 
@@ -1249,18 +1249,18 @@ shade will depend on the lightness value. Any HSL value, regardless of the hue a
 will be rendered solid black if lightness is 0% and solid white if lightness is 100%. 
 The "normal" lightness value---that is, the value associated with most common colors---is 
 50%.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">rgba(rrr,ggg,bbb,a.aa)<br>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa)<br>
-hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</span></i></h4>
-<p>These extend the previous three formats to include an alpha (opacity) value. The alpha 
-value must be a real number between 0 and 1 inclusive; percentages are not permitted for 
-the alpha value. Thus, rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
-are all equivalent half-opaque red.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">&lt;keyword&gt;</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">rgba(rrr,ggg,bbb,a.aa)<br>
+          rgba(rrr.rr%,ggg.gg%,bbb.bb%,a.aa)<br>
+          hsla(hhh.hh,sss.ss%,lll.ll%,a.aa)</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>These extend the previous three formats to include an alpha (opacity) value. The alpha 
+          value must be a real number between 0 and 1 inclusive; percentages are not permitted for 
+          the alpha value. Thus, rgba(255,0,0,0.5) and rgba(100%,0%,0%,0.5) and hsla(0,100%,50%,0.5)
+          are all equivalent half-opaque red.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">&lt;keyword&gt;</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>One of 16 recognized keywords based on the original Windows VGA colors. These keywords 
 are aqua, black, blue, fuchsia, gray, green, lime, maroon, navy, olive, purple, red, 
 silver, teal, white, and yellow. Browsers generally also recognize the 148 color keywords 
@@ -1268,61 +1268,63 @@ documented in the <a href="http://www.w3.org/TR/css-color-4/" target="_blank"
 rel="noreferrer noopener" title="CSS Color Module Level 4">
 CSS Color Module Level 4 specification</a>, referred to for historical reasons as "the X11 colors" 
 (though the list does not precisely replicate X11's colors).</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">currentColor</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">currentColor</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A special keyword that represents the current computed value of the element's color 
 property. This means you can declare background-color: currentColor and set the element's 
 background to be the same color as its foreground (not recommended). When applied to the 
 color property, it is equivalent to declaring color: inherit. It can also be used on
 borders; border: 1px solid is equivalent to border: 1px solid currentColor. This can be 
 quite useful when (un)setting a border's color via DOM scripting.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><i><span class="newFont">transparent</span></i></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0), which is the 
-computed value any time transparent is used.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><i><span class="newFont">transparent</span></i></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A special keyword that is (just barely) a shorthand for rgba(0,0,0,0), which is the 
+          computed value any time transparent is used.</p>
 
         </section>
         <section id="ch2-3-number">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-3">2.3 Number Values</h2>
-
-<p>A number value is expressed as a positive or negative number (when permitted). Numbers 
-can be either real (represented as <i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). 
-They may also restrict the range of acceptable values, as with color values that accept only 
-integers in the range 0--255. A more common range restriction is to limit a number to be 
-non-negative. These are sometimes represented as <i>&lt;non-negative number&gt;</i> or 
-<i>&lt;non-negative integer&gt;</i>.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A number value is expressed as a positive or negative number (when permitted). Numbers 
+          can be either real (represented as <i>&lt;number&gt;</i>) or integers (<i>&lt;integer&gt;</i>). 
+          They may also restrict the range of acceptable values, as with color values that accept only 
+          integers in the range 0--255. A more common range restriction is to limit a number to be 
+          non-negative. These are sometimes represented as <i>&lt;non-negative number&gt;</i> or 
+          <i>&lt;non-negative integer&gt;</i>.</p>
 
         </section>
         <section id="ch2-4-perc">
 
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-4">2.4 Percentage Values</h2>
-
-<p>A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately by a percent 
-sign (%). There should never be any space between the number and the percent sign. A percentage 
-value will always be computed relative to something else. For example, declaring font-size: 120% 
-for an element sets its font size to 120% of the computed font-size of its parent element. 
-Fractional values, such as 543.21%, are valid. Some properties may restrict percentage values to 
-be non-negative.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A percentage value is expressed as a <i>&lt;number&gt;</i> followed immediately by a percent 
+          sign (%). There should never be any space between the number and the percent sign. A percentage 
+          value will always be computed relative to something else. For example, declaring font-size: 120% 
+          for an element sets its font size to 120% of the computed font-size of its parent element. 
+          Fractional values, such as 543.21%, are valid. Some properties may restrict percentage values to 
+          be non-negative.</p>
 
         </section>
         <section id="ch2-5-length">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-5">2.5 Length Values</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A length value is expressed as a positive or negative number (when permitted), followed 
+          immediately by a unit identifier. There should never be any space between the number and the 
+          unit identifier. A length value of 0 (zero) does not require a unit identifier.</p>
 
-<p>A length value is expressed as a positive or negative number (when permitted), followed 
-immediately by a unit identifier. There should never be any space between the number and the 
-unit identifier. A length value of 0 (zero) does not require a unit identifier.</p>
-<p>Length units are divided into two types: <i>absolute units</i>, which are (in theory) always 
-measured in the same way, and <i>relative units</i>, which are measured in relation to other 
-things.</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<h4><b>Absolute Length Units</b></h4>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<p>The available absolute units are:</p>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Length units are divided into two types: <i>absolute units</i>, which are (in theory) always 
+          measured in the same way, and <i>relative units</i>, which are measured in relation to other 
+          things.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h4><b>Absolute Length Units</b></h4>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>The available absolute units are:</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <h5><i>Centimeters</i> (cm)</h5>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The centimeters found on rulers the world over. There are 2.54 centimeters to an inch, and 
@@ -1429,49 +1431,50 @@ given a viewport that is 937 pixels wide by 650 pixels tall, 1vmax is equal to 9
         </section>
         <section id="ch2-6-fraction">
 
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-6">2.6 Fraction Values</h2>
-
-<p>A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
-fraction unit is 1fr, four fraction units are 4fr, and so on. This is a concept introduced 
-by Grid Layout, and is used to divide up fractions of the unconstrained space in a layout. 
-Note that fr is <i>not</i> a <i>&lt;length&gt;</i> unit, and thus cannot be used in places 
-where length values are permitted (e.g., calc() expressions, see "Calculation Values" on
-page 45).</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A <i>fraction value</i> is a <i>&lt;number&gt;</i> followed by the label fr. Thus, one
+          fraction unit is 1fr, four fraction units are 4fr, and so on. This is a concept introduced 
+          by Grid Layout, and is used to divide up fractions of the unconstrained space in a layout. 
+          Note that fr is <i>not</i> a <i>&lt;length&gt;</i> unit, and thus cannot be used in places 
+          where length values are permitted (e.g., calc() expressions, see "Calculation Values" on
+          page 45).</p>
 
         </section>
         <section id="ch2-7-uris">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-7">2.7 URIs</h2>
-
-<p>A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or another 
-stylesheet. CSS defines a URI as relative to the stylesheet that contains it. URI stands 
-for Uniform Resource Identifier, which is the more recent name for URLs. (Technically, 
-URLs are a subset of URIs.) In CSS, which was first defined when URIs were still called 
-URLs, this means that references to URIs will often appear in the form url(<i>&lt;uri&gt;</i>). Fun!</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A URI value (<i>&lt;uri&gt;</i>) is a reference to a file such as a graphic or another 
+          stylesheet. CSS defines a URI as relative to the stylesheet that contains it. URI stands 
+          for Uniform Resource Identifier, which is the more recent name for URLs. (Technically, 
+          URLs are a subset of URIs.) In CSS, which was first defined when URIs were still called 
+          URLs, this means that references to URIs will often appear in the form url(<i>&lt;uri&gt;</i>). Fun!</p>
         </section>
         <section id="ch2-8-angles">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-8">2.8 Angles</h2>
-
-<p>The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed 
-immediately by an angle unit. There are four types of angle units: degrees (deg), grads (grad), 
-radians (rad), and turns (turn). For example, a right angle could be declared as 90deg, 100grad, 
-1.571rad, or 0.25turn. In each case, the values are translated into degrees in the range 0 
-through 360. This is also true of negative values: −90deg is equivalent to 270deg.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>The format of an <i>&lt;angle&gt;</i> is expressed as a <i>&lt;number&gt;</i> followed 
+          immediately by an angle unit. There are four types of angle units: degrees (deg), grads (grad), 
+          radians (rad), and turns (turn). For example, a right angle could be declared as 90deg, 100grad, 
+          1.571rad, or 0.25turn. In each case, the values are translated into degrees in the range 0 
+          through 360. This is also true of negative values: −90deg is equivalent to 270deg.</p>
         </section>
         <section id="ch2-9-times">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-9">2.9 Times</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A time value (<i>&lt;time&gt;</i>) is expressed as a <i>&lt;number&gt;</i> followed
 immediately by a time unit. There are two types of time units: seconds (s) and milliseconds 
 (ms). Time values appear in aural styles, which are not widely supported, and in the much 
 better supported transitions and animations.</p>
         </section>
         <section id="ch2-10-frequencies">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-10">2.10 Frequencies</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A frequency value (<i>&lt;frequency&gt;</i>) is expressed as a non-negative 
 <i>&lt;number&gt;</i> followed immediately by a frequency unit. There are two types of 
 frequency units: hertz (Hz) and kilohertz (kHz).</p>
@@ -1481,12 +1484,13 @@ writing, frequency values are only used with aural styles, which are not well su
 
         </section>
         <section id="ch2-11-position">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-11">2.11 Position</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A position value (<i>&lt;position&gt;</i>) is how you specify the placement of an
+          origin image in backgrounds, object fitting, masking placement, and a few other 
+          circumstances. Its syntactical structure is rather complicated:</p>
 
-<p>A position value (<i>&lt;position&gt;</i>) is how you specify the placement of an
-origin image in backgrounds, object fitting, masking placement, and a few other 
-circumstances. Its syntactical structure is rather complicated:</p>
 <pre>
 &lbrack;
 &lbrack; left &vert; center &vert; right &vert; top &vert; bottom &vert; <i>&lt;percentage&gt;</i> &vert; <i>&lt;length&gt;</i> &rbrack; &vert;
@@ -1497,42 +1501,44 @@ circumstances. Its syntactical structure is rather complicated:</p>
 &rbrack;
 </pre>
 
-<p>That might seem a little convoluted and repetitive, but it's all down to the subtly 
-complex patterns that this value type has to allow, such as center, bottom right, 50% 
-center, left 77px, and so on. The notation used here is described in "Value Syntax 
-Conventions" on page 73.</p>
+          <p>That might seem a little convoluted and repetitive, but it's all down to the subtly 
+          complex patterns that this value type has to allow, such as center, bottom right, 50% 
+          center, left 77px, and so on. The notation used here is described in "Value Syntax 
+          Conventions" on page 73.</p>
 
         </section>
         <section id="ch2-12-strings">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-12">2.12 Strings</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either single 
+          or double quotes. If a string needs to include the same quote that encloses it, it must 
+          be escaped. For example,</p>
 
-<p>A string (<i>&lt;string&gt;</i>) is a series of characters enclosed by either single 
-or double quotes. If a string needs to include the same quote that encloses it, it must 
-be escaped. For example,</p>
-<p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at 
-once!&quot;. If a newline is needed within a string, it is represented as \A, which
-is the Unicode codepoint for the line feed character. Any Unicode character can be 
-represented using an escaped codepoint reference; thus, a left curly double quotation 
-mark can be represented with \201C. If a string does contain a line feed for legibility 
-reasons, it must be escaped and will be removed when processing the string.</p>
+          <p>&apos;That\&apos;s amazing!&apos; or &quot;Deploy the \&quot;scare quotes\&quot; at 
+          once!&quot;. If a newline is needed within a string, it is represented as \A, which
+          is the Unicode codepoint for the line feed character. Any Unicode character can be 
+          represented using an escaped codepoint reference; thus, a left curly double quotation 
+          mark can be represented with \201C. If a string does contain a line feed for legibility 
+          reasons, it must be escaped and will be removed when processing the string.</p>
         </section>
         <section id="ch2-13-identifiers">
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-13">2.13 Identifiers</h2>
-
-<p>There are some properties that accept an <i>identifier value</i>, which is a user-
-defined label of some kind; the most common examples are grid lines and areas in grid 
-layout and keyframe names in animations. Identifiers are represented in the value syntax 
-as <i>&lt;identifier&gt;</i>. Identifiers are words and are case-sensitive; thus, myID 
-and MyID are, as far as CSS is concerned, completely distinct and unrelated to each 
-other. In cases where a property accepts both an identifier and one or more keywords,
-the author should take care to never define an identifier identical to a valid keyword.</p>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>There are some properties that accept an <i>identifier value</i>, which is a user-
+          defined label of some kind; the most common examples are grid lines and areas in grid 
+          layout and keyframe names in animations. Identifiers are represented in the value syntax 
+          as <i>&lt;identifier&gt;</i>. Identifiers are words and are case-sensitive; thus, myID 
+          and MyID are, as far as CSS is concerned, completely distinct and unrelated to each 
+          other. In cases where a property accepts both an identifier and one or more keywords,
+          the author should take care to never define an identifier identical to a valid keyword.</p>
 
         </section>
 		<section id="ch2-14-attr">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-14">2.14 Attribute Values</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>In a few CSS properties, it's possible to pull in the value of an HTML attribute 
 defined for the element being styled. This is done with the attr() value. As of early 
 2018, this is almost exclusively done with generated content, using the content 
@@ -1544,10 +1550,10 @@ bracket and trailing space. Any attribute, including HTML <b>data-&ast;</b> attr
 addressed in this manner.</p>
 
         <section id="ch2-15-calc">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch2-15">2.15 Calculation Values</h2>
-
-<p>Calculation values take the form calc(), with an equation inside the parentheses. calc() can be 
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>Calculation values take the form calc(), with an equation inside the parentheses. calc() can be 
 used wherever <i>&lt;length&gt;</i>, <i>&lt;frequency&gt;</i>, <i>&lt;angle&gt;</i>, <i>&lt;time&gt;</i>, <i>&lt;percentage&gt;</i>, <i>&lt;number&gt;</i>, or <i>&lt;integer&gt;</i> values are allowed. You can 
 also use all these units.</p>
 
@@ -1575,20 +1581,22 @@ exponents are not permitted in calc().</p>
   <li>Any circumstance that creates division by zero makes the value invalid.</li>
 </ol>
 
-<p>There's one more notable limitation: whitespace is <i>required</i> to either
-side of the + and - operators, while it is not for &ast; and /. This avoids
-ambiguity with respect to numeric values, which can be negative.</p>
+          <p>There's one more notable limitation: whitespace is <i>required</i> to either
+          side of the + and - operators, while it is not for &ast; and /. This avoids
+          ambiguity with respect to numeric values, which can be negative.</p>
 
         </section>
         <section id="ch2-16-var">
-<h2 id="ch2-16">2.16 Variables</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <h2 id="ch2-16">2.16 Variables</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <p>As this book was being finished in early 2018, a new capability was
+          being added to CSS. The technical term for this is <i>custom properties</i>,
+          even though what these really do is create (sort of) variables in your
+          CSS. They do not, contrary to their name, create special CSS properties,
+          in the sense of properties like color or font.</p>
 
-<p>As this book was being finished in early 2018, a new capability was
-being added to CSS. The technical term for this is <i>custom properties</i>,
-even though what these really do is create (sort of) variables in your
-CSS. They do not, contrary to their name, create special CSS properties,
-in the sense of properties like color or font.</p>
-<p>Custom properties are defined by giving a custom identifier a value, like this:</p>
+          <p>Custom properties are defined by giving a custom identifier a value, like this:</p>
 
 <pre>
 <b>html</b> {
@@ -1596,25 +1604,31 @@ in the sense of properties like color or font.</p>
 }
 </pre>
 
-<p>The important thing is that any custom identifier of this type begins with <i>two</i> 
-hyphens (&dash;-). Anything else, and the identifier will not be recognized, meaning the 
-variable definition will fail.</p>
+        <p>The important thing is that any custom identifier of this type begins with <i>two</i> 
+        hyphens (&dash;-). Anything else, and the identifier will not be recognized, meaning the 
+        variable definition will fail.</p>
 
-<p>The defined value can then be invoked later on using a var() value type, like this:</p>
+        <p>The defined value can then be invoked later on using a var() value type, like this:</p>
+
 <pre><b>h1</b> {<b>color</b>: var(&dash;-mainColor);}</pre>
-<p>Note that these names are case-sensitive, so &dash;-maincolor and
-&dash;-MainColor are completely separate identifiers. Custom properties are
-scoped to the element to which they are applied.</p>
-        </section>
-	  </section>  <!-- id="ch2-values" -->
+
+        <p>Note that these names are case-sensitive, so &dash;-maincolor and
+        &dash;-MainColor are completely separate identifiers. Custom properties are
+        scoped to the element to which they are applied.</p>
+
+ 	  </section>  <!-- id="ch2-values" -->
+
 	  <!-- ch3 selectors queries -->
-      <section id="ch3-selectors-queries">
-        <h2>Chapter 3: Selectors &amp; Queries</h2>
+      <section id="ch3-sel-queries">
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+        <h2 id="ch3">Chapter 3: Selectors &amp; Queries</h2>
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="ch3-1-sel">
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-1">3.1 Selectors</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- Universal Selector  -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!-- Universal Selector  -->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
@@ -2059,9 +2073,9 @@ html&lbrack;lang&vert;=&quot;tr&quot;&rbrack; {color: red;}
 </table>
         </section>
         <section id="ch3-2-struct-pseudo">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-2">3.2 Structural Pseudo-Classes</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Strictly speaking, all pseudo-classes (like all selectors) are structural: they 
 are, after all, dependent on document structure in some fashion. What sets the 
 pseudo-classes listed here apart is that they are intrinsically about patterns found 
@@ -2511,9 +2525,9 @@ section article:only-of-type {margin: 2em 0 3em;}
 </table>
         </section>
         <section id="ch3-3-neg-pseudo">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-3">3.3 The Negation Pseudo-Classes</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>There is but one pseudo-class that handles negation, but it is so unique that it deserves its 
 own subsection.</p>
 
@@ -2553,9 +2567,9 @@ ul &ast;:not(li) {text-indent: 2em;}
 
         </section>
         <section id="ch3-4-inter-pseudo">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-4">3.4 Interaction Pseudo-Classes</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>The pseudo-classes listed here are all related to the user's interaction with the document: 
 whether styling different link states, highlighting an element that's the target of a fragment 
 identifier, or styling form elements based on their being enabled or disabled.</p>
@@ -2756,7 +2770,9 @@ a:visited {color: purple;}
 
         </section>
         <section id="ch3-5-pseudo">
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-5">3.5 Pseudo-Elements</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
@@ -2883,9 +2899,9 @@ p:first-letter {text-decoration: underline;}
 </table>
         </section>
         <section id="ch3-6-media-queries">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-6">3.6 Media Queries</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>With media queries, an author can define the media environment in which a given 
 stylesheet, or portion of a stylesheet, is used by the browser. In the past, this was 
 handled by setting media types with the media attribute on link elements, or with the 
@@ -3094,9 +3110,9 @@ result is landscape.</p>
 terminal. A grid-based device will return 1; otherwise, 0 is returned.</p>
         </section>
         <section id="ch3-7-feature-queries">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch3-7">3.7 Feature Queries</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>A <i>feature query</i> is an at-rule block similar to a media query. The difference is 
 that it queries a user agent about its support for a given property-value combination. If 
 the user agent indicates it supports the query, the rules within the at-block are applied.
@@ -3113,6 +3129,7 @@ color. (But just because you can doesn't mean you should.)
 Feature queries are useful when applying advanced CSS features. For
 example, converting a float-based layout to grid might look something
 like this:</p>
+
 <pre>
 &lbrack;..<b>.float layout rules here</b>...&rbrack;
 <b>&#64;supports</b> (<b>display</b>: grid) { 
@@ -3121,24 +3138,30 @@ like this:</p>
   <b>and other rules needed for float layout</b>
   <b>but not in grid layout</b>...&rbrack; }
 </pre>
+
 <p>It's also possible to do a negated feature query using the keyword not:</p>
+
 <pre>
 <b>&#64;supports not</b> (<b>shape-outside</b>: circle()) { 
   &lbrack;..<b>.rules for use in browsers that</b>
   <b>don&apos;t understand</b>
   <b>circle float shapes</b>...&rbrack; }
 </pre>
+
 <p><b>Feature Queries</b></p>
 
         </section>
-	  </section>    <!-- id="ch3-selectors-queries" -->
+	  </section>    <!-- id="ch3-sel-queries" -->
       <section id="ch4-prop-ref">
 
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <h2 id="ch4">Chapter 4: Property Reference</h2>
-
+        <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
         <section id="ch4-1-inh-anim">
 
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch4-1">4.1 Inheritance &amp; Animation</h2>
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 
 <p>Each property listed in this chapter has "Inh." and "Anim." values. The
 values "N" (for no) and "Y" (for yes) indicate whether a property is
@@ -3150,9 +3173,9 @@ details will be given in the property's definition.</p>
 
         </section>
         <section id="ch4-2-val-syntax">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch4-2">4.2 Value Syntax Conventions</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Any words presented in constant width are keywords that must appear
 literally, without quotes. The forward slash (/) and the comma (,) must
 also be used literally.</p>
@@ -3195,9 +3218,9 @@ type like a color is permitted, it will be represented using
 </ul>
         </section>
         <section id="ch4-3-univ-values">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch4-3">4.3 Universal Values</h2>
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <p>Any user agent that has fully implemented the Cascading and Inheritance module will honor 
 the following values for all properties. Think of it as a given property's value syntax 
 being written something like:</p>
@@ -3209,11 +3232,11 @@ of clarity. The exception is the property all, which accepts <i>only</i> these t
 keywords as values. For definitions of these keywords' meaning, see Chapter 2.</p>
         </section>
         <section id="ch4-4-prop-ref">
-
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
           <h2 id="ch4-4">4.4 Property Reference</h2>
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- align-content Inh. N Anim. N  -->
-<!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
+          <!-- align-content Inh. N Anim. N  -->
+          <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <table style="width:500px;">
   <thead>
     <tr>
