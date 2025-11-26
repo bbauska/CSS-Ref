@@ -3370,9 +3370,9 @@ section.gallery {align-items: baseline;}
   </tbody>
 </table>
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<!-- align-self Inh. N Anim. N  -->
+<!-- align-self  Inh. N Anim. N  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table>
+<table style="width:500px;">
   <thead>
     <tr>
       <th width="200"><h3>align-self</h3></th>
@@ -3773,7 +3773,9 @@ h2 {animation-name: flip;}
     </tr>
     <tr>
       <td><b>Description</b></td>
-      <td>Defines the run state of one or more CSS animations. The default state of running is the most useful in static CSS environments, but it can be used to easily stop or start animations via DOM scripting or interactive CSS (e.g., :hover).</td>
+      <td>Defines the run state of one or more CSS animations. The default state of running is the 
+	  most useful in static CSS environments, but it can be used to easily stop or start animations 
+	  via DOM scripting or interactive CSS (e.g., :hover).</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4194,7 +4196,7 @@ url(http://www.pix.org/dots.png);}
   <tbody>
     <tr>
       <td><b>Values</b></td>
-      <td>&lbrack; border-box &vert; padding-box &vert; content-box &rbrack;# </td>
+      <td>&lbrack; border-box &vert; padding-box &vert; content-box &rbrack;#</td>
     </tr>
     <tr>
       <td><b>Initial value</b></td>
@@ -4211,13 +4213,13 @@ url(http://www.pix.org/dots.png);}
     <tr>
       <td><b>Description</b></td>
       <td>Defines the boundary within the element box against which background image positioning is 
-      calculated. Historically, this has been equivalent to the default value of padding-box. This 
+	  calculated. Historically, this has been equivalent to the default value of padding-box. This 
       property allows for different positioning contexts. Note that if the value of background-origin 
       is "further out" than the value for background-clip, and the image is positioned to an edge, 
-      part of it may be clipped. For example: div#example {background-origin: border-box; background-clip: 
-      content-box; background-position: 100% 100%;} In this case the image will be placed so that its 
-      bottom-right corner aligns with the bottom-right   corner of the outer border edge, but the only 
-      parts of it that will be visible are those that fall within the content area.</td>
+      part of it may be clipped. For example: div#example {background-origin: border-box; background-
+	  clip: content-box; background-position: 100% 100%;} In this case the image will be placed so 
+	  that its bottom-right corner aligns with the bottom-right   corner of the outer border edge, 
+	  but the only parts of it that will be visible are those that fall within the content area.</td>
     </tr>
     <tr>
       <td><b>Examples</b></td>
@@ -4820,7 +4822,7 @@ a:visited {border-color: maroon;}
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
 <!-- border-image  Inh. N Anim. P  -->
 <!--~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~-->
-<table>
+<table style="width:500px;">
   <thead>
     <tr>
       <th width="200"><h3>border-image</h3></th>
